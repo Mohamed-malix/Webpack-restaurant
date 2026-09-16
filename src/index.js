@@ -1,4 +1,6 @@
 
 import './style.css';
-import './greenLand.jpeg';
+import './home.jpg';
 import './home.js';
+import {createEl} from './home.js';
+export {createEl};

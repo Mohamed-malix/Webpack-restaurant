@@ -1,12 +1,16 @@
 
-let content= document.querySelector('.content');
-let header2= document.createElement('h2');
-let contentText= document.createElement('p');
 
-header2.classList.add('welcome');
-contentText.classList.add('text');
-header2.textContent='Welcome to our amazing restaurant';
-contentText.innerHTML='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio at facilis id veritatis pariatur dolore doloribus <br>minima cupiditate, eligendi, accusantium, ad consequatur ullam quaerat!';
 
-content.appendChild(header2);
-content.appendChild(contentText);
+export function createEl(element, classNa, text){
+
+   let elementNa= document.createElement(`${element}`);
+   elementNa.classList.add(`${classNa}`);
+   elementNa.textContent=`${text}`;
+   document.querySelector('.content').appendChild(elementNa);
+
+   console.log(elementNa);
+   
+}
+
+createEl('h2', 'welcome','Welcome to our amazing restaurant');
+createEl('p', 'text','Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio at facilis id veritatis pariatur dolore doloribus <br>minima cupiditate, eligendi, accusantium, ad consequatur !');
