@@ -1,6 +1,84 @@
 
 
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+
 body{
-    background:black;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('greenLand.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height:100vh;
     color:#ccc;
+}
+
+
+
+
+.navList{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#111;
+    padding-inline:55px;
+    padding-block:10px;
+    padding-top:15px;
+    
+    
+}
+
+.navLinks{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    column-gap:20px;
+    margin-right:15px;
+}
+
+li{
+    list-style: none;
+}
+
+
+img.green{
+    width:90px;
+}
+
+
+.btn{
+    padding:6px 15px;
+    font-size: 1.1rem;
+    border:none;
+    border-radius:12px;
+
+    background:transparent;
+    color:#ccc;
+}
+
+.btn:hover{
+    color:rgb(251, 214, 170);
+}
+
+
+.content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:93%;
+}
+
+
+h2{
+    font-size: 2.9rem;  
+    text-align:center;
+    text-shadow:0 1px 0;
 }
