@@ -1,16 +1,40 @@
 
 
+export function createPr(element, classNa, parent ){
 
-export function createEl(element, classNa, text){
+   let elementNa= document.createElement(`${element}`);
+   elementNa.classList.add(`${classNa}`);   
+   parent.appendChild(elementNa);
+
+   return elementNa;
+}
+
+// let containerDiv=document.querySelector('.content');
+// let homeBack=createPr('div', 'homeBack', containerDiv);
+// let parentHome=createPr('div', 'parentHome', homeBack);
+
+
+// createImg(src, 'image', parentHome);
+
+export function createImg(src, classNa, parent){
+
+   let elementNa= document.createElement(`img`);
+   elementNa.setAttribute('src',`${src}`);
+   elementNa.classList.add(`${classNa}`);
+   parent.appendChild(elementNa);
+   
+}
+
+
+
+export function createEl(element, classNa, text, parent){
 
    let elementNa= document.createElement(`${element}`);
    elementNa.classList.add(`${classNa}`);
    elementNa.textContent=`${text}`;
-   document.querySelector('.content').appendChild(elementNa);
-
-   console.log(elementNa);
+   parent.appendChild(elementNa);
    
 }
 
-createEl('h2', 'welcome','Welcome to our amazing restaurant');
-createEl('p', 'text','Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio at facilis id veritatis pariatur dolore doloribus <br>minima cupiditate, eligendi, accusantium, ad consequatur !');
+// createEl('h2', 'header1','Welcome to our amazing restaurant',parentHome );
+// createEl('p', 'text','Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio at facilis id veritatis pariatur dolore doloribus <br>minima cupiditate, eligendi, accusantium, ad consequatur !', parentHome);

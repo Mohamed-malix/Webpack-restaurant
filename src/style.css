@@ -9,18 +9,6 @@
 
 
 
-body{
-    background:linear-gradient(to right,rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('home.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height:100vh;
-    color:#ccc;
-}
-
-
-
 
 .navList{
     display:flex;
@@ -31,7 +19,7 @@ body{
     padding-inline:55px;
     padding-block:10px;
     padding-top:15px;
-    
+    color:#ccc;  
     
 }
 
@@ -50,7 +38,7 @@ li{
 
 
 img.green{
-    width:90px;
+    width:70px;
 }
 
 
@@ -65,26 +53,47 @@ img.green{
 }
 
 .btn:hover{
-    color:rgb(251, 214, 170);
+    color:rgb(243, 192, 130);
 }
 
 
 .content{
+    height:100vh;
+    width:100vw;
+
+}
+
+.homeBack{
+    background:linear-gradient(to right,rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width:100%;
+    height:100%;
+}
+
+
+.parentHome{
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
 
     row-gap: 75px; 
-    width:50%;
-    height:80%;
+    width:45%;
+    height:90%;
     padding-left:20px;
+
+
 }
+    
 
 
-h2{
+.header1{
     font-size: 2.5rem;  
     text-shadow:0 1px 0;
+    color:white;
 }
 
 
@@ -92,9 +101,63 @@ h2{
 .text{
     font-size:1rem;
     text-shadow:0 0 1px;
-    margin-left: 15px;
     color:#ccc;
     /* background: rgb(115, 198, 249); */
 }
 
 
+
+
+
+
+
+
+/*cards and menu section*/
+
+.cardsBack{
+    width:100%;
+    height:100%;
+    background-color:#f9f4f4;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:37px;
+
+    width:80%;
+    margin:auto;
+    height:100%;
+
+    color:#131313;
+}
+
+.card{
+    background:#fff;
+    width:28%;
+    padding:35px 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    flex-wrap:wrap;
+
+    border-radius:35px;
+}
+
+.image{
+    margin-bottom:27px;
+}
+
+.header3{
+    font-size:1.5rem;
+    font-weight:550;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.cards .text{
+    color:#626262
+}
