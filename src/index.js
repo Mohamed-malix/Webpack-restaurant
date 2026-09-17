@@ -5,7 +5,11 @@ import './home.js';
 import './menu.js'
 import {createEl, createImg, createPr, homeCall} from './home.js';
 import {menuCall} from './menu.js';
-export {createEl, createImg, createPr };
+import{contactCall} from './contact.js';
+export {createEl, createImg, createPr};
+
+
+
 
 
 homeCall();
@@ -17,6 +21,11 @@ document.querySelector('.homeBtn').addEventListener('click', () => {
 document.querySelector('.menuBtn').addEventListener('click', () => {
     document.querySelector('.content').innerHTML='';
     menuCall()
+});
+
+document.querySelector('.contactBtn').addEventListener('click', () => {
+    document.querySelector('.content').innerHTML='';
+    contactCall()
 });
 
 

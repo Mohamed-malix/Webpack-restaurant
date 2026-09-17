@@ -2,7 +2,7 @@
 
 import './image.png'
 import src from './image.png';
-import {createImg, createPr, createEl} from './home.js';
+import {createImg, createPr, createEl} from './index.js';
 
 
 
