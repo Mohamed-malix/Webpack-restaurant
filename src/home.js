@@ -9,12 +9,18 @@ export function createPr(element, classNa, parent ){
    return elementNa;
 }
 
-// let containerDiv=document.querySelector('.content');
-// let homeBack=createPr('div', 'homeBack', containerDiv);
-// let parentHome=createPr('div', 'parentHome', homeBack);
+
+export function homeCall(){
+   let containerDiv=document.querySelector('.content');
+   let homeBack=createPr('div', 'homeBack', containerDiv);
+   let parentHome=createPr('div', 'parentHome', homeBack);
+
+   createEl('h2', 'header1','Welcome to our amazing restaurant',parentHome );
+   createEl('p', 'text','Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio at facilis id veritatis pariatur dolore doloribus <br>minima cupiditate, eligendi, accusantium, ad consequatur !', parentHome);
+
+}
 
 
-// createImg(src, 'image', parentHome);
 
 export function createImg(src, classNa, parent){
 
@@ -36,5 +42,3 @@ export function createEl(element, classNa, text, parent){
    
 }
 
-// createEl('h2', 'header1','Welcome to our amazing restaurant',parentHome );
-// createEl('p', 'text','Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio at facilis id veritatis pariatur dolore doloribus <br>minima cupiditate, eligendi, accusantium, ad consequatur !', parentHome);
